@@ -1,7 +1,4 @@
 # Stock-Forecast
-
-Scope
------
 Along with a comparison of different Machine Learning Algorithms
 
 Installation Instructions 
@@ -27,5 +24,4 @@ Project Team Members:
     Anjali Singh
     Divya Kumar
     Kevin John
-    Nelson 
-    
+    Nelson Morris
