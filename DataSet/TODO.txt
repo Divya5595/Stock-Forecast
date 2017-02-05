@@ -1,0 +1,4 @@
+Need to automate selection & download of stock data from 
+
+yahoo finance into csv and
+pandas inbuilt python library
