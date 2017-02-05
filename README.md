@@ -21,7 +21,7 @@ Final year B.E. Project in Don Bosco Institue of Technology, Batch 2017.
 Project Guide: 
     Prof. Anagha Shastri
 Project Team Members: 
-    Anjali Singh
-    Divya Kumar
-    Kevin John
-    Nelson Morris
+    Anjali Singh,
+    Divya Kumar,
+    Kevin John,
+    Nelson Morris.
