@@ -1,0 +1,69 @@
+<!DOCTYPE html>                                                                 
+  <head>  
+<style>
+header, footer {
+	padding: 1em;
+	color: white;
+	background-color: black;
+	clear: left;
+	text-align: center;
+	width: 100%;
+	height: 80px;
+}
+body {
+	height: 80%;
+}
+
+</style>
+
+<title>Corelation</title>
+
+<header>
+<img src="{{url_for('static', filename='DBIT_Logo.jpg')}}" style="display: inline;float:left;width:75px;height:75px;">
+<center><h1>ANALYSIS</h1></center>
+</header>
+<body bgcolor="bluegrey">
+<h1></h1>
+<style type="text/css">
+	table.tableizer-table {
+		font-size: 16px;
+		border: 1px solid #CCC; 
+		font-family: Arial, Helvetica, sans-serif;
+	} 
+	.tableizer-table td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table th {
+		background-color: #8B2109; 
+		color: #FFF;
+		font-weight: bold;
+	}
+</style>
+<div style="float:left; width:50%;height:100%;">
+<center><table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th>Days</th><th>SBI</th><th>ONGC</th><th>LTI</th><th>TCS</th><th>INFY</th></tr></thead><tbody>
+ <tr><td>28</td><td>97.65700019</td><td>99.03727475</td><td>97.21869159</td><td>94.25957485</td><td>98.53972151</td></tr>
+ <tr><td>56</td><td>97.65700019</td><td>99.03727475</td><td>97.21869159</td><td>94.25957485</td><td>98.53972151</td></tr>
+ <tr><td>84</td><td>97.65700019</td><td>99.03727475</td><td>98.30280374</td><td>94.25957485</td><td>98.53972151</td></tr>
+ <tr><td>112</td><td>97.65700019</td><td>99.03727475</td><td>97.21869159</td><td>92.42532963</td><td>98.53972151</td></tr>
+ <tr><td>140</td><td>99.55828692</td><td>98.83979264</td><td>98.30280374</td><td>92.31769665</td><td>99.13847877</td></tr>
+ <tr><td>168</td><td>99.55828692</td><td>98.83979264</td><td>97.31588785</td><td>94.47484079</td><td>99.13847877</td></tr>
+ <tr><td>196</td><td>99.55828692</td><td>98.83979264</td><td>97.31588785</td><td>94.47484079</td><td>89.08991051</td></tr>
+ <tr><td>224</td><td>99.55828692</td><td>98.83979264</td><td>97.31588785</td><td>94.47484079</td><td>99.13847877</td></tr>
+ <tr><td>252</td><td>99.55828692</td><td>98.83979264</td><td>97.31588785</td><td>94.47484079</td><td>99.13847877</td></tr>
+ <tr><td>280</td><td>97.61859036</td><td>98.69168107</td><td>97.31588785</td><td>96.5512602</td><td>97.40359039</td></tr>
+ <tr><td>308</td><td>97.61859036</td><td>98.69168107</td><td>97.31588785</td><td>96.5512602</td><td>93.13475269</td></tr>
+ <tr><td>336</td><td>97.61859036</td><td>98.69168107</td><td>98.31028037</td><td>86.70732801</td><td>97.40359039</td></tr>
+ <tr><td>Avg</td><td>98.43960054</td><td>98.86859212</td><td>97.53894081</td><td>93.76924687</td><td>97.31205376</td></tr>
+ <tr><td>Min</td><td>93.76924687</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Max</td><td>98.86859212</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+</tbody></table></center>
+</div>
+
+<div style="float:right; width:50%;height:100%; ">
+<center><h2 style="color:blue">Graph</h2></center>
+<center><img src="{{url_for('static', filename='comparision.png')}}" style="display: inline;width:100%;height:100%"><center>
+</div>
+</body>

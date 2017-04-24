@@ -1,0 +1,67 @@
+<!DOCTYPE html>                                                                 
+  <head>   
+  <style>
+header, footer {
+	padding: 1em;
+	color: white;
+	background-color: black;
+	clear: left;
+	text-align: center;
+	width: 100%;
+	height: 80px;
+}
+body {
+	height: 80%;
+}
+
+</style>
+
+  <title>Output_Stock</title>
+  <header>
+	<img src="{{url_for('static', filename='DBIT_Logo.jpg')}}" style="display: inline;float:left;width:75px;height:75px;">
+	<center><h1>SELECT TICKER</h1></center>
+	</header>
+	
+    <body  bgcolor="bluegrey">                 
+	<H1></H1>
+     <div class="container">
+     <div class="row">
+	 <table border=0 align="center" width="70%">
+	 <tr>
+		<td>
+			<center><a href="/Company_Select/SBI" id="SBI"><center><img src="{{url_for('static', filename='sbi.png')}}" style="width:304px;height:228px;"></a></center></a></center>
+		</td>
+		<td>
+			<center><a href="/Company_Select/L&T" id="L&T"><center><img src="{{url_for('static', filename='lnt.png')}}" style="width:304px;height:228px;"></a></center></a></center>
+		</td>
+		<td>
+			<center><a href="/Company_Select/ONGC" id="ONGC"><center><img src="{{url_for('static', filename='ongc.png')}}" style="width:304px;height:228px;"></a></center></a></center>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<center><a href="/Company_Select/TATA" id="TATA"><center><img src="{{url_for('static', filename='tata.png')}}" style="width:304px;height:228px;"></a></center></a></center>
+		</td>
+		<td>
+			<center><a href="/Company_Select/INFO" id="INFO"><center><img src="{{url_for('static', filename='info.png')}}" style="width:304px;height:228px;"></a></center></a></center>
+		</td>
+		<td>
+			<center><a href="/Analysis" id="analysis"><center><img src="{{url_for('static', filename='correlation.png')}}" style="width:304px;height:228px;"></a></center></a></center>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<center><a href="/"><img src="{{url_for('static', filename='prev.jpeg')}}"></a></center>
+		</td>
+		<td>
+		</td>
+		<td>
+			<center><a href="/Analysis"><img src="{{url_for('static', filename='Select_Company.jpeg')}}"></a></center>
+		</td>
+	</tr>
+       	</table>
+	 </div>
+     </div>
+     </div>
+    </body>
+</html>

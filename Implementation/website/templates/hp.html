@@ -1,0 +1,42 @@
+<!DOCTYPE html>                                                                 
+  <head>  
+<style>
+header, footer {
+	padding: 1em;
+	color: white;
+	background-color: black;
+	clear: left;
+	text-align: center;
+	width: 100%;
+	height: 80px;
+}
+body {
+	height: 80%;
+}
+
+</style>
+
+<title>Stock Prediction</title>
+
+<header>
+<img src="{{url_for('static', filename= 'DBIT_Logo.jpg')}}" style="display: inline;float:left;width:75px;height:75px;">
+<center><h1>Stock Market Prediction using Support Vector Machine</h1></center>
+</header>
+
+<body bgcolor="bluegrey"> 
+
+<div style="float:left; width:50%;height:100%;">
+<center><h2 style="color:blue">Problem Statement</h2></center>
+<center><p style="color:darkblue">Stock Prediction has been considered as both, an interesting and a difficult research topic in the field of finance and engineering due to its potential financial gain.</p></center>
+<center><p style="color:darkblue">Many researchers have strived for proving the predictability of the financial market by doing fundamental analysis or technical analysis, but to an accuracy of 85-89%.</p></center>
+<center><p style="color:darkblue">Our aim is to predict the future stock prices accurately using supervised learning algorithms. This will be achieved by building a software that analyses historical stock data.</p></center>
+<a href="/Company_Select"><center><img src="{{url_for('static', filename='Select_Company.jpeg')}}" style="width:75px;height:75px;"></a></center>
+</div>
+
+<div style="float:right; width:50%;height:100%; ">
+<center><h2 style="color:blue">Flow Chart</h2></center>
+<center><img src="{{url_for('static', filename='BlockDiagram.png')}}" style="display: inline;width:250px;height:300px"><center>
+</div>
+
+</body>
+</html>

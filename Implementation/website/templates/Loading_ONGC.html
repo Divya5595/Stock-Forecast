@@ -1,0 +1,36 @@
+<!DOCTYPE html>                                                                 
+  <head>   
+  <style>
+header, footer {
+	padding: 1em;
+	color: white;
+	background-color: black;
+	clear: left;
+	text-align: center;
+	width: 100%;
+	height: 80px;
+}
+body {
+	height: 80%;
+}
+
+</style>
+
+  <title>Loading Page</title>
+ <header>
+	<img src="{{url_for('static', filename='DBIT_Logo.jpg')}}" style="display: inline;float:left;width:75px;height:75px;">
+	<center><h1>SELECT TICKER</h1></center>
+</header>
+
+    <body bgcolor="bluegrey">
+    <center><h2>You will be redirected in a few seconds</h2></center>
+    <center><img src="{{url_for('static', filename='ongc.png')}}" style="width:304px;height:228px;"></center>
+	
+	<script>
+        var timer = setTimeout(function() {
+            window.location='/Output_Stock/ONGC'
+        }, 3000);
+    </script>
+</body>
+    
+</html>
