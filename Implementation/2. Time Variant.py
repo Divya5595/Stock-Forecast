@@ -74,10 +74,8 @@ def Setup_Validate_data():
 def Set_Model():
     #Set Model for ML
     global clf
-    clf = LinearRegression()
-    #clf = svm.SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',max_iter=-1, probability=False, random_state=None, shrinking=True,tol=0.001, verbose=False)
-    #clf = svm.SVC(C=100000,kernel='rbf')
-    #clf = svm.SVR()
+    #clf = LinearRegression()
+    clf = svm.SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',max_iter=-1, probability=False, random_state=None, shrinking=True,tol=0.001, verbose=False)
     clf.fit(X_train, y_train)
     return
 
