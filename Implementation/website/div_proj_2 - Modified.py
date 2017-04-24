@@ -88,7 +88,7 @@ def Setup_Validate_data():
 def Set_Model():
     #Set Model for ML
     global clf
-    clf = LinearRegression()
+    clf = SVM()
     clf.fit(X_train, y_train)
     return
 
