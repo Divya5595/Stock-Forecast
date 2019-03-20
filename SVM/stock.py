@@ -21,8 +21,8 @@ def get_data(filename):
 
 def predict_prices(dates, prices, x):
     dates = np.reshape(dates, (len(dates), 1))
-    svr_lin = SVR(kernel='linear', C=1e3).fit(dates,prices)
-    svr_poly = SVR(kernel = 'poly', C=1e3 , degree = 2 )
+    svr_lin = SVR(kernel='linear', C=1e3, gamma = 'auto').fit(dates,prices)
+    svr_poly = SVR(kernel = 'poly', C=1e3, gamma = 'auto' , degree = 2 )
     svr_rbf = SVR(kernel = 'rbf', C=1e3 , gamma = 0.1)
     svr_lin.fit(dates, prices)    
     svr_poly.fit(dates, prices)
@@ -36,7 +36,7 @@ def predict_prices(dates, prices, x):
     plt.ylabel('Price')
     plt.title('Support Vector Regresion')
     plt.show()
-    return svr_rbf.predict(x)[0], svr_lin.predict(x)[0], svr_poly.predict(x)[0]
+    return svr_rbf.predict(np.array(x).reshape(-1,1))[0], svr_lin.predict(np.array(x).reshape(-1,1))[0], svr_poly.predict(np.array(x).reshape(-1,1))[0]
 
 get_data('aapl.csv')
 predicted_price =   predict_prices(dates, prices, 26)
